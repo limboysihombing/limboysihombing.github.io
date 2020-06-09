@@ -157,7 +157,6 @@ const api = {
                     <h5>VS</h5>
                   </div>
                   <div class="team right">
-                  <!-- <img src="src/img_acm.png" alt=""> -->
                     <p class="center">${awayTeam.name}</p>
                   </div>
                 </div>
@@ -265,12 +264,13 @@ const api = {
                       <tbody>
               `
               table.forEach(data => {
+                const imgUrl = data.team.crestUrl.replace(/^http:\/\//i, 'https://')
                 clasementHtml += `
                   <tr>
                     <td>${data.position}</td>
                     <td>
                       <a href="/team-detail.html?id=${data.team.id}">
-                        <img src="${data.team.crestUrl}" class="responsive-img" width="30" alt="${data.team.name}"></td>
+                        <img src="${imgUrl}" class="responsive-img" width="30" alt="${data.team.name}"></td>
                       </a>
                     <td>
                       <a href="./team-detail.html?id=${data.team.id}">
@@ -359,12 +359,13 @@ const api = {
                 <tbody>
         `
         table.forEach(data => {
+          const imgUrl = data.team.crestUrl.replace(/^http:\/\//i, 'https://')
           clasementHtml += `
             <tr>
               <td>${data.position}</td>
               <td>
                 <a href="/team-detail.html?id=${data.team.id}">
-                  <img src="${data.team.crestUrl}" class="responsive-img" width="30" alt="${data.team.name}"></td>
+                  <img src="${imgUrl}" class="responsive-img" width="30" alt="${data.team.name}"></td>
                 </a>
               <td>
                 <a href="./team-detail.html?id=${data.team.id}">
@@ -411,7 +412,7 @@ const api = {
                 <div class="col s12 m6">
                   <div class="card">
                     <div class="card-content center">
-                      <img id="club_img" src="${data.crestUrl}" alt="" class="responsive-img">
+                      <img id="club_img" src="${data.crestUrl.replace(/^http:\/\//i, 'https://')}" alt="" class="responsive-img">
                     </div>
                   </div>
                 </div>
@@ -504,7 +505,7 @@ const api = {
           <div class="col s12 m6">
             <div class="card">
               <div class="card-content center">
-                <img id="club_img" src="${data.crestUrl}" alt="" class="responsive-img">
+                <img id="club_img" src="${data.crestUrl.replace(/^http:\/\//i, 'https://')}" alt="" class="responsive-img">
               </div>
             </div>
           </div>
@@ -597,7 +598,7 @@ const api = {
         <div class="col s12 m6">
           <div class="card">
             <div class="card-content center">
-              <img id="club_img" src="${data.crestUrl}" alt="" class="responsive-img">
+              <img id="club_img" src="${data.crestUrl.replace(/^http:\/\//i, 'https://')}" alt="" class="responsive-img">
             </div>
           </div>
         </div>
@@ -691,7 +692,7 @@ const api = {
             <div class="col m6 l4 s12">
               <div class="card saved-item">
                 <div class="card-content saved-card-content">
-                  <span><a href="team-detail.html?id=${team.id}&saved=true"><img width="50" height="50" src="${team.crestUrl}" class="valign-wrapper"></a></span>
+                  <span><a href="team-detail.html?id=${team.id}&saved=true"><img width="50" height="50" src="${team.crestUrl.replace(/^http:\/\//i, 'https://')}" class="valign-wrapper"></a></span>
                   <div class="content">
                     <span class="team-name grey-text text-darken-4 valign-wrapper"><a href="team-detail.html?id=${team.id}&saved=true">${team.name}</a></span>
                   </div>
@@ -739,7 +740,6 @@ const api = {
                   <h5>VS</h5>
                 </div>
                 <div class="team right">
-                <!-- <img src="src/img_acm.png" alt=""> -->
                   <p class="center">${awayTeam.name}</p>
                 </div>
               </div>
