@@ -1,0 +1,119 @@
+.blue { background-color: #4e73df; }
+.indigo { background-color: #6610f2; }
+.purple { background-color: #6f42c1; }
+.pink { background-color: #e83e8c; }
+.red { background-color: #e74a3b; }
+.orange { background-color: #fd7e14; }
+.yellow { background-color: #f6c23e; }
+.green { background-color: #1cc88a; }
+.teal { background-color: #20c9a6; }
+.cyan { background-color: #36b9cc; }
+
+.select-wrapper input.select-dropdown {
+  color: teal;
+  font-weight: 600;
+}
+.select-wrapper .caret {
+  fill: white;
+}
+.text-center {
+  font-weight: 600;
+  width: 100%;
+  font-size: medium;
+  text-align: center;
+}
+
+.card {
+  border-radius: 10px;
+}
+.card > .card-content {
+  display: flex;
+  padding: 10px;
+}
+.card-content > .left {
+  flex-basis: 35%;
+}
+
+.card-content > .center {
+  flex-basis: 25%;
+}
+.card-content > .right {
+  flex-basis: 35%;
+}
+.card-content > .team > img {
+  max-width: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.card-title {
+  font-size: 18px !important;
+  padding: 20px 20px 10px 20px;
+  font-weight: 600 !important;
+}
+
+
+.league-detail > tbody > tr > td,.league-detail > tbody > tr > th {
+  padding: 5px;
+  margin: 0;
+  border-bottom: 1px solid gray;
+}
+
+.league-options .btn{
+  width: 100%;
+}
+
+.page-footer {
+  padding-top: 0px;
+}
+.saved-card-content > .team-name {
+  margin-left: 10px;
+}
+.content {
+  width: 100%;
+}
+.team-name a{
+  font-size: 25px;
+  margin-left: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.delete-button {
+  position: relative;
+  top: 0;
+  right: 0;
+  color: gray;
+  cursor: pointer;
+}
+.save-match-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.delete-match-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: gray;
+  cursor: pointer;
+}
+.save-match-button:hover, .delete-match-button:hover, .delete-button:hover {
+  color: black;
+}
+
+.icon-large {
+  font-size: 30px;
+}
+
+.loader-animation {
+  padding: 20px;
+}
