@@ -31,7 +31,9 @@ workbox.precaching.precacheAndRoute(
     { url: "/src/js/view.js", revision: '1' },
   
     { url: "/src/images/notif.png", revision: '1' },
-  ]
+  ], {
+    ignoreUrlParametersMatching: [/.*/]
+  }
 )
 // Football Data API
 workbox.routing.registerRoute(
